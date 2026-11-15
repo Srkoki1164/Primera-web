@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -58,9 +58,30 @@
                     <td>Radiohead</td>
                     <td>1997</td>
                     <td>51:15</td>
-
+                </tr>
             </tbody>
         </table>
+    </section>
+    <section class="contacto-seccion">
+        <h3 id="contacto">Sugerencia de bandas</h3>
+        <form>
+            <label for="nombre">Nombre de Album</label>
+            <input type="text" id="nombre" name="nombre" placeholder="OK Computer" required>
+            
+            <label for ="lanzamiento">Fecha de lanzamiento</label>
+            <input type="number" id="lanzamiento" name="lanzamiento" max="2026" min="1800" >
+            
+            <label for ="banda">Banda</label>
+            <input type="text" id="banda" name="banda" placeholder="Radiohead">
+            
+            <label for ="duracion">Duracion del Album</label>
+            <input type="text" id="duracion" name="duracion" placeholder="38:45" >
+            
+            <label for="comentarios">Comentarios</label>
+            <textarea id="comentarios" name="comentarios" rows="2" col="2" placeholder="Escribe algunas razones de tu solicitud."></textarea>
+            <button type="submit">Enviar</button>
+        
+        </form>
     </section>
 </body>
 </html>
