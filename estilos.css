@@ -27,9 +27,13 @@ header{
 .bandas-seccion li{
     padding: 12px;
     border-bottom:5px solid black;
+    border-radius: 5px;
     box-shadow: 0 4px 4px black;
+    list-style: none;
 }
 .bandas-seccion ul{
+    padding: 0px;
+    gap:16px;
     display: grid;
     grid-template-columns: auto;
     grid-template-areas:
