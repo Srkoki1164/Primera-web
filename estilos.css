@@ -1,0 +1,78 @@
+body{
+    background-color: rgb(31, 0, 37);
+}
+h1{
+    display: flex;
+    justify-content:center;
+}
+header{
+    background-color: purple;
+    color: wheat;
+}
+
+.bandas-seccion{
+    background-color: rgb(68, 31, 7);
+    color: yellow;
+    
+}
+.albumes-seccion{
+    background-color: purple;
+    color: orange;
+}
+.contacto-seccion{
+    background-color: rgb(16, 17, 40);
+    color: rgb(255, 255, 255);
+}
+
+.bandas-seccion li{
+    padding: 12px;
+    border-bottom:5px solid black;
+    box-shadow: 0 4px 4px black;
+}
+.bandas-seccion ul{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:
+        "header header"
+        "aside body";
+}
+input[type="number"]{
+    width: 50px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+}
+input[type="text"]{
+    width: 100px;
+    border-radius: 10px;
+    background-color: rgb(50, 40, 27);
+    color:antiquewhite;
+  
+}
+h2{
+    background-color: wheat;
+    color: brown;
+}
+tbody tr:nth-child(even){
+    border-radius: 10px;
+    background-color: red;    
+}
+tbody tr:nth-child(odd){
+    background-color: antiquewhite;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+@media(max-width: 768px){
+    header nav{
+        flex-direction: column;
+        align-items: center;
+        gap:10px;
+    }    
+    .bandas-seccion ul{
+        grid-template-columns: 1fr;
+        }
+}
